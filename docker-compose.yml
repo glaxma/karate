@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  image: karate
+  build:
+    context: .
+    dockerfile: ./Dockerfile
+  volumes:
+    - ./target:/app/target
+    - ~/.m2:/root/.m2
