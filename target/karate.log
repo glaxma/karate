@@ -1,0 +1,1726 @@
+17:26:36.912 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+17:26:44.929 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+17:27:08.123 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:27:11.515 [main]  DEBUG com.intuit.karate - response time in milliseconds: 3332
+1 < 200
+1 < Date: Mon, 23 Oct 2023 11:57:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1880
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81a9cd23a9ab2e91-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:27:13.268 [main]  INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+17:27:20.609 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+17:29:43.277 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+17:29:46.472 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698062386434
+17:29:46.642 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+17:29:56.425 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:29:58.248 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1795
+1 < 200
+1 < Date: Mon, 23 Oct 2023 12:00:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 2047
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81a9d136cb5e2e85-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:29:58.818 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:8
+* match response == 300
+match failed: EQUALS
+  $ | data types don't match (MAP:NUMBER)
+  {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  300
+
+src/test/java/userApi.feature:8
+17:30:03.895 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+18:07:30.448 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+18:07:31.041 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/userApi.feature - mismatched input '{' expecting <EOF>
+18:12:28.955 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+18:12:29.366 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/userApi.feature - mismatched input '"' expecting <EOF>
+18:13:43.423 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+18:13:46.837 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/userApi.feature - mismatched input '"' expecting <EOF>
+18:16:59.794 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+18:17:01.097 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698065221081
+18:17:07.432 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:17:08.650 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1194
+1 < 200
+1 < Date: Mon, 23 Oct 2023 12:47:11 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 4877
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81aa1650ffaa2e9f-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+18:17:09.138 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:8
+* match response == 200
+match failed: EQUALS
+  $ | data types don't match (MAP:NUMBER)
+  {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  200
+
+src/test/java/userApi.feature:8
+18:17:09.320 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:12
+And request ={"name": "morpheus","job": "leader"}
+js failed:
+>>>>
+01: ={"name": "morpheus","job": "leader"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found =
+={"name": "morpheus","job": "leader"}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)
+
+src/test/java/userApi.feature:12
+18:17:13.780 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+18:18:37.035 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+18:18:40.226 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698065320186
+18:18:49.401 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:18:50.890 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1462
+1 < 200
+1 < Date: Mon, 23 Oct 2023 12:48:53 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 4979
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81aa18cf9c1d2e8d-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+18:18:51.492 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:8
+* match response == 200
+match failed: EQUALS
+  $ | data types don't match (MAP:NUMBER)
+  {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  200
+
+src/test/java/userApi.feature:8
+18:18:51.732 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:12
+And request ={"name": "morpheus","job": "leader"}
+js failed:
+>>>>
+01: ={"name": "morpheus","job": "leader"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found =
+={"name": "morpheus","job": "leader"}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)
+
+src/test/java/userApi.feature:12
+18:18:57.647 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+18:19:39.353 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+18:19:42.253 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698065382222
+18:19:42.441 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+18:19:51.404 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:19:52.611 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1179
+1 < 200
+1 < Date: Mon, 23 Oct 2023 12:49:55 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697865622&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lPzxlDnDPKjxye4rUbREXsBaEXN7N8S3LiJ1QvCIGms%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5041
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81aa1a51a87b2e9f-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+18:19:53.349 [main]  INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+18:19:57.291 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+18:20:52.228 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+18:20:57.264 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698065457211
+18:20:57.512 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10
+18:21:09.559 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:12
+And request ={"name": "morpheus","job": "leader"}
+js failed:
+>>>>
+01: ={"name": "morpheus","job": "leader"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found =
+={"name": "morpheus","job": "leader"}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)
+
+src/test/java/userApi.feature:12
+18:21:17.149 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+12:10:17.476 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:10:21.456 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698129621393
+12:10:33.504 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:10:35.543 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1995
+1 < 200
+1 < Date: Tue, 24 Oct 2023 06:40:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 2401
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7Ia38O%2BE17KyTZrjPhdFL0TwJzQz%2B2a3SjuHrGfiLgor6fA63ScVY%2Bm%2FWQrRDdgiXylgmxaQpxw3m0Agp776W2196equA%2FiLLIqBW1FhAuulVxZLgsnFoeaPoQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81b03ac3feaf2e96-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+12:10:36.587 [main]  INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+12:10:37.220 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+12:10:37.743 [main]  DEBUG com.intuit.karate - response time in milliseconds: 515
+1 < 404
+1 < Date: Tue, 24 Oct 2023 06:40:41 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3jkWIDuAWG9WW%2BT%2FZBChGkFvJ15ziEYXd%2FaP66tXtR%2BUOwBuoQCneCHh17vfhDJ5nVViQA4QUg5o82%2BYxumwvN%2FmFNgA9BxlOpExAeXherAgaohBwBbynJCeag%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81b03ad09d5c2e97-HYD
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+            type="text/javascript"
+            src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+            <header class="main-header">
+                <section class="wrap">
+                    <h1 class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="" /></a>
+                    </h1>
+                </section>
+            </header>
+            <main class="the-sell">
+                <div class="wrap">
+                    <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+                    <section class="key-sells">
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Fake data</h3>
+                                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+                            </div>
+                            <i class="fa fa-cloud-download"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Real responses</h3>
+                                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Always-on</h3>
+                                <p>
+                                    24/7 <strong><em>free</em></strong> access
+                                    in your development phases. Go nuts.
+                                </p>
+                            </div>
+                            <i class="fa fa-toggle-on"></i>
+                        </div>
+                    </section>
+                    <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+                    <div class="t-center main-arrow">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </div>
+                    <script
+                        async
+                        type="text/javascript"
+                        src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin"
+                        id="_carbonads_js"
+                    ></script>
+                </div>
+            </main>
+        </div>
+        <div class="container">404</div>
+        <footer>
+            <div class="wrap">
+                <hr class="dark" />
+                <p class="t-center">
+                    Made for developers and designers by
+                    <a href="https://benhowdle.im">Ben Howdle</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+        <script src="/js/app.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+        <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+        <script>
+            ;(function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init(
+                        'custom',
+                        'CEBIP53J',
+                        'placement:reqresin-sponsor',
+                        {
+                            target: '#impeccable-js',
+                            template: `
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+        <img src="##logo##" style="background-color: ##backgroundColor##">
+        <div class="sponsor-description">##description##</div>
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>
+        </a>
+        `,
+                        }
+                    )
+                }
+            })()
+        </script>
+    </body>
+</html>
+
+
+12:10:37.877 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:15
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 515, url: https://reqres.in/, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+            type="text/javascript"
+            src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+            <header class="main-header">
+                <section class="wrap">
+                    <h1 class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="" /></a>
+                    </h1>
+                </section>
+            </header>
+            <main class="the-sell">
+                <div class="wrap">
+                    <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+                    <section class="key-sells">
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Fake data</h3>
+                                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+                            </div>
+                            <i class="fa fa-cloud-download"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Real responses</h3>
+                                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Always-on</h3>
+                                <p>
+                                    24/7 <strong><em>free</em></strong> access
+                                    in your development phases. Go nuts.
+                                </p>
+                            </div>
+                            <i class="fa fa-toggle-on"></i>
+                        </div>
+                    </section>
+                    <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+                    <div class="t-center main-arrow">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </div>
+                    <script
+                        async
+                        type="text/javascript"
+                        src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin"
+                        id="_carbonads_js"
+                    ></script>
+                </div>
+            </main>
+        </div>
+        <div class="container">404</div>
+        <footer>
+            <div class="wrap">
+                <hr class="dark" />
+                <p class="t-center">
+                    Made for developers and designers by
+                    <a href="https://benhowdle.im">Ben Howdle</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+        <script src="/js/app.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+        <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+        <script>
+            ;(function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init(
+                        'custom',
+                        'CEBIP53J',
+                        'placement:reqresin-sponsor',
+                        {
+                            target: '#impeccable-js',
+                            template: `
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+        <img src="##logo##" style="background-color: ##backgroundColor##">
+        <div class="sponsor-description">##description##</div>
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>
+        </a>
+        `,
+                        }
+                    )
+                }
+            })()
+        </script>
+    </body>
+</html>
+
+src/test/java/userApi.feature:15
+12:10:44.345 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+13:40:43.133 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+13:40:46.272 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698135046232
+13:40:56.964 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:40:58.874 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1878
+1 < 200
+1 < Date: Tue, 24 Oct 2023 08:11:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cP3mr5WaQY5kfjTDrycxwynnyeOhPT9MGyV16GHqOVur9JHQ%2FqnhBkHCXXeF00SP9Y23mCTcadSFPqkDaR%2BA4qArthTj6WxGUWyM1CoAKNTvVPD7cT%2B4NQiJXw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81b0bf2fafbf2e91-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+13:40:59.656 [main]  INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+13:40:59.747 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:12
+* def dataGenerator=Java.type('helpers')
+no step-definition method match found for: def dataGenerator=Java.type('helpers')
+src/test/java/userApi.feature:12
+13:41:04.878 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+13:43:02.509 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+13:43:05.397 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698135185367
+13:43:05.601 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 11
+13:43:12.602 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:12
+* def dataGenerator=Java.type('java.helpers')
+no step-definition method match found for: def dataGenerator=Java.type('java.helpers')
+src/test/java/userApi.feature:12
+13:43:18.202 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+13:49:12.194 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+13:49:14.078 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698135554038
+13:49:14.269 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 11
+13:49:21.713 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:12
+* def dataGenerator=Java.type('data.helpers')
+no step-definition method match found for: def dataGenerator=Java.type('data.helpers')
+src/test/java/userApi.feature:12
+13:49:27.335 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+13:57:07.321 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+13:57:07.788 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698136027782
+13:57:07.829 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+13:57:10.100 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:4
+* def dataGenerator= Java.type('data.Helper')
+no step-definition method match found for: def dataGenerator= Java.type('data.Helper')
+src/test/java/userApi.feature:4
+13:57:15.955 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+13:58:38.290 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+13:58:41.891 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698136121832
+13:58:42.179 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+13:58:51.579 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:4
+* def dataGenerator = Java.type('data.Helper')
+js failed:
+>>>>
+01: Java.type('data.Helper')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class data.Helper is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+src/test/java/userApi.feature:4
+13:58:56.962 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+14:01:54.019 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:01:56.932 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698136316895
+14:01:57.203 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.259 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:15
+* def randomFirstNameGenerator = dataGenerator.getFirstname()
+js failed:
+>>>>
+01: dataGenerator.getFirstname()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getFirstname) on data.Helper failed due to: Unknown identifier: getFirstname
+- <js>.:program(Unnamed:1)
+
+src/test/java/userApi.feature:15
+14:02:10.753 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+14:03:44.914 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:03:46.074 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698136426064
+14:03:46.133 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:03:51.500 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"#randomFirstNameGenerator","job":"#randomLastNameGenerator"}
+
+14:03:52.529 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1009
+1 < 404
+1 < Date: Tue, 24 Oct 2023 08:33:57 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698136436&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=JlZtm2kE3dW3YatvZq5caJ8Mc765kQ8%2BfDBnEgcDnM4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698136436&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=JlZtm2kE3dW3YatvZq5caJ8Mc765kQ8%2BfDBnEgcDnM4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81b0e0b98c262e8a-HYD
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+            type="text/javascript"
+            src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+            <header class="main-header">
+                <section class="wrap">
+                    <h1 class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="" /></a>
+                    </h1>
+                </section>
+            </header>
+            <main class="the-sell">
+                <div class="wrap">
+                    <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+                    <section class="key-sells">
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Fake data</h3>
+                                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+                            </div>
+                            <i class="fa fa-cloud-download"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Real responses</h3>
+                                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Always-on</h3>
+                                <p>
+                                    24/7 <strong><em>free</em></strong> access
+                                    in your development phases. Go nuts.
+                                </p>
+                            </div>
+                            <i class="fa fa-toggle-on"></i>
+                        </div>
+                    </section>
+                    <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+                    <div class="t-center main-arrow">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </div>
+                    <script
+                        async
+                        type="text/javascript"
+                        src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin"
+                        id="_carbonads_js"
+                    ></script>
+                </div>
+            </main>
+        </div>
+        <div class="container">404</div>
+        <footer>
+            <div class="wrap">
+                <hr class="dark" />
+                <p class="t-center">
+                    Made for developers and designers by
+                    <a href="https://benhowdle.im">Ben Howdle</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+        <script src="/js/app.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+        <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+        <script>
+            ;(function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init(
+                        'custom',
+                        'CEBIP53J',
+                        'placement:reqresin-sponsor',
+                        {
+                            target: '#impeccable-js',
+                            template: `
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+        <img src="##logo##" style="background-color: ##backgroundColor##">
+        <div class="sponsor-description">##description##</div>
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>
+        </a>
+        `,
+                        }
+                    )
+                }
+            })()
+        </script>
+    </body>
+</html>
+
+
+14:03:52.607 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:20
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 1009, url: https://reqres.in/, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+            type="text/javascript"
+            src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+            <header class="main-header">
+                <section class="wrap">
+                    <h1 class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="" /></a>
+                    </h1>
+                </section>
+            </header>
+            <main class="the-sell">
+                <div class="wrap">
+                    <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+                    <section class="key-sells">
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Fake data</h3>
+                                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+                            </div>
+                            <i class="fa fa-cloud-download"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Real responses</h3>
+                                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Always-on</h3>
+                                <p>
+                                    24/7 <strong><em>free</em></strong> access
+                                    in your development phases. Go nuts.
+                                </p>
+                            </div>
+                            <i class="fa fa-toggle-on"></i>
+                        </div>
+                    </section>
+                    <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+                    <div class="t-center main-arrow">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </div>
+                    <script
+                        async
+                        type="text/javascript"
+                        src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin"
+                        id="_carbonads_js"
+                    ></script>
+                </div>
+            </main>
+        </div>
+        <div class="container">404</div>
+        <footer>
+            <div class="wrap">
+                <hr class="dark" />
+                <p class="t-center">
+                    Made for developers and designers by
+                    <a href="https://benhowdle.im">Ben Howdle</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+        <script src="/js/app.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+        <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+        <script>
+            ;(function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init(
+                        'custom',
+                        'CEBIP53J',
+                        'placement:reqresin-sponsor',
+                        {
+                            target: '#impeccable-js',
+                            template: `
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+        <img src="##logo##" style="background-color: ##backgroundColor##">
+        <div class="sponsor-description">##description##</div>
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>
+        </a>
+        `,
+                        }
+                    )
+                }
+            })()
+        </script>
+    </body>
+</html>
+
+src/test/java/userApi.feature:20
+14:03:56.131 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+14:06:32.617 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:06:33.853 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698136593836
+14:06:33.966 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:06:40.480 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"#randomFirstNameGenerator","job":"#randomLastNameGenerator"}
+
+14:06:41.672 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1174
+1 < 404
+1 < Date: Tue, 24 Oct 2023 08:36:46 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nGwyEaZVv6wo2PpvMUhMsk8Z8KjPwCzUzcXjLwLXC%2FW3hRo%2F056TOMX3imiJtQTM6U2PFX%2Fb3w6PqpzIT6i1CFsEotSbxufckFA2Hbj7mcbjZtA98Xz%2FVlRKzg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81b0e4da6cf52e99-HYD
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+            type="text/javascript"
+            src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+            <header class="main-header">
+                <section class="wrap">
+                    <h1 class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="" /></a>
+                    </h1>
+                </section>
+            </header>
+            <main class="the-sell">
+                <div class="wrap">
+                    <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+                    <section class="key-sells">
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Fake data</h3>
+                                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+                            </div>
+                            <i class="fa fa-cloud-download"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Real responses</h3>
+                                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Always-on</h3>
+                                <p>
+                                    24/7 <strong><em>free</em></strong> access
+                                    in your development phases. Go nuts.
+                                </p>
+                            </div>
+                            <i class="fa fa-toggle-on"></i>
+                        </div>
+                    </section>
+                    <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+                    <div class="t-center main-arrow">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </div>
+                    <script
+                        async
+                        type="text/javascript"
+                        src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin"
+                        id="_carbonads_js"
+                    ></script>
+                </div>
+            </main>
+        </div>
+        <div class="container">404</div>
+        <footer>
+            <div class="wrap">
+                <hr class="dark" />
+                <p class="t-center">
+                    Made for developers and designers by
+                    <a href="https://benhowdle.im">Ben Howdle</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+        <script src="/js/app.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+        <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+        <script>
+            ;(function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init(
+                        'custom',
+                        'CEBIP53J',
+                        'placement:reqresin-sponsor',
+                        {
+                            target: '#impeccable-js',
+                            template: `
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+        <img src="##logo##" style="background-color: ##backgroundColor##">
+        <div class="sponsor-description">##description##</div>
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>
+        </a>
+        `,
+                        }
+                    )
+                }
+            })()
+        </script>
+    </body>
+</html>
+
+
+14:06:41.763 [main]  ERROR com.intuit.karate - src/test/java/userApi.feature:20
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 1174, url: https://reqres.in/users, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+            type="text/javascript"
+            src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+            <header class="main-header">
+                <section class="wrap">
+                    <h1 class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="" /></a>
+                    </h1>
+                </section>
+            </header>
+            <main class="the-sell">
+                <div class="wrap">
+                    <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+                    <section class="key-sells">
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Fake data</h3>
+                                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+                            </div>
+                            <i class="fa fa-cloud-download"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Real responses</h3>
+                                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Always-on</h3>
+                                <p>
+                                    24/7 <strong><em>free</em></strong> access
+                                    in your development phases. Go nuts.
+                                </p>
+                            </div>
+                            <i class="fa fa-toggle-on"></i>
+                        </div>
+                    </section>
+                    <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+                    <div class="t-center main-arrow">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </div>
+                    <script
+                        async
+                        type="text/javascript"
+                        src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin"
+                        id="_carbonads_js"
+                    ></script>
+                </div>
+            </main>
+        </div>
+        <div class="container">404</div>
+        <footer>
+            <div class="wrap">
+                <hr class="dark" />
+                <p class="t-center">
+                    Made for developers and designers by
+                    <a href="https://benhowdle.im">Ben Howdle</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+        <script src="/js/app.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+        <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+        <script>
+            ;(function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init(
+                        'custom',
+                        'CEBIP53J',
+                        'placement:reqresin-sponsor',
+                        {
+                            target: '#impeccable-js',
+                            template: `
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+        <img src="##logo##" style="background-color: ##backgroundColor##">
+        <div class="sponsor-description">##description##</div>
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>
+        </a>
+        `,
+                        }
+                    )
+                }
+            })()
+        </script>
+    </body>
+</html>
+
+src/test/java/userApi.feature:20
+14:06:45.372 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+14:08:00.304 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:08:02.311 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698136682295
+14:08:02.403 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:08:34.415 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:08:37.355 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:08:47.111 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+14:08:48.629 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1492
+1 < 201
+1 < Date: Tue, 24 Oct 2023 08:38:53 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698136733&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=aZtgtxq2MejN8kvia7%2FOGCrCJSYRkvxQdt5epIC2drs%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698136733&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=aZtgtxq2MejN8kvia7%2FOGCrCJSYRkvxQdt5epIC2drs%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-d7l1eq1s30ellQQG/29xIfgVves"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81b0e7f3ed582e91-HYD
+{"name":"morpheus","job":"leader","id":"114","createdAt":"2023-10-24T08:38:53.029Z"}
+
+14:08:48.959 [main]  INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "leader",
+  "id": "114",
+  "createdAt": "2023-10-24T08:38:53.029Z"
+}
+ 
+14:08:48.974 [main]  INFO  com.intuit.karate - [print] 201 
+14:08:48.994 [main]  INFO  com.intuit.karate - [print] 1698136727113 
+14:08:54.236 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+14:09:33.450 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:09:37.182 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698136777143
+14:09:37.385 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:09:53.504 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"#randomFirstNameGenerator","job":"#randomLastNameGenerator"}
+
+14:09:55.021 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1493
+1 < 201
+1 < Date: Tue, 24 Oct 2023 08:39:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 118
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-i+GCVeKiwFSuXvxMt8OOltwhAP0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4cctlgJQMTaae11g6aMpeUO5mc7FPKQ02XWRK0kfoVQYJ%2Br9mYdJzrWoc34STGMXYUHBL%2FJm91r%2BCupVv0LVcGaWFN1Bc3yCwTAe%2BcugAO2G1lThBKKlHj7v%2Fw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81b0e992fd952e97-HYD
+{"name":"#randomFirstNameGenerator","job":"#randomLastNameGenerator","id":"95","createdAt":"2023-10-24T08:39:59.434Z"}
+
+14:09:55.143 [main]  INFO  com.intuit.karate - [print] {
+  "name": "#randomFirstNameGenerator",
+  "job": "#randomLastNameGenerator",
+  "id": "95",
+  "createdAt": "2023-10-24T08:39:59.434Z"
+}
+ 
+14:09:55.154 [main]  INFO  com.intuit.karate - [print] 201 
+14:09:55.173 [main]  INFO  com.intuit.karate - [print] 1698136793505 
+14:09:59.602 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
+14:22:04.323 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:22:04.995 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698137524987
+14:22:05.062 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:22:07.506 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 29
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Etta","job":"Fadel"}
+
+14:22:08.099 [main]  DEBUG com.intuit.karate - response time in milliseconds: 587
+1 < 201
+1 < Date: Tue, 24 Oct 2023 08:52:12 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 78
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698137532&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=7XPWAKtfnxdkga1ekNTKnfsdFcqX7cjpKEeTL6O5GG4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698137532&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=7XPWAKtfnxdkga1ekNTKnfsdFcqX7cjpKEeTL6O5GG4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"4e-UeD971qASoX4CMuVVLswjYvF+js"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81b0fb7929c42e91-HYD
+{"name":"Etta","job":"Fadel","id":"76","createdAt":"2023-10-24T08:52:12.579Z"}
+
+14:22:08.123 [main]  INFO  com.intuit.karate - [print] {
+  "name": "Etta",
+  "job": "Fadel",
+  "id": "76",
+  "createdAt": "2023-10-24T08:52:12.579Z"
+}
+ 
+14:22:08.125 [main]  INFO  com.intuit.karate - [print] 201 
+14:22:08.128 [main]  INFO  com.intuit.karate - [print] 1698137527507 
+14:22:10.024 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/userApi.feature
